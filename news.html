@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Poly Energy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        /* Scroll to Top Button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #14ae55; /* Using a theme green color */
+            color: white;
+            cursor: pointer;
+            padding: 10px 25px; /* Adjusted padding: 10px top/bottom, 25px left/right */
+            border-radius: 25px; /* Make it a capsule shape */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #108a44; /* Darker green on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/poly-energy-logo.png" alt="Poly Energy Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-showcase.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-button">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Company News & Updates</h1>
+            <div class="news-grid">
+
+                <!-- News Card 2025: Innotech -->
+                <a href="/news-detail.html?title=Showcased%20at%20HKUST(GZ)%20Innotech%20Carnival%202025&date=2025-06-15&img=/assets/News/innotech-3.jpg&img2=/assets/News/innotech-4.jpg&summary=We%20participated%20in%20the%20Innotech%20%E5%88%9B%E7%A7%91%E5%98%89%E5%B9%B4%E5%8D%8E%202025%20at%20HKUST(GZ)%2C%20presenting%20our%20latest%20project%20and%20innovations.%20Thanks%20to%20HKUST(GZ)%20and%20all%20visitors%20for%20your%20interest%20and%20encouragement!" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/innotech-3.jpg" alt="Innotech 创科嘉年华 2025" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Showcased at HKUST(GZ) Innotech 创科嘉年华 2025</h2>
+                        <p class="news-card-date">2025-06-15</p>
+                    </div>
+                </a>
+
+                <!-- News Card 2025: Unicorn Day -->
+                <a href="/news-detail.html?title=Roadshow%20at%20HKUST%20Unicorn%20Day%202025&date=2025-06-13&img=/assets/News/unicorn-day-3.jpg&img2=/assets/News/unicorn-day-4.jpg&summary=We%20presented%20our%20project%20again%20at%20the%20HKUST%20Unicorn%20Day%202025.%20Thank%20you%20to%20HKUST%20and%20all%20guests%20for%20your%20continued%20interest%20and%20support!" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/unicorn-day-3.jpg" alt="Unicorn Day 2025" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Roadshow at HKUST Unicorn Day 2025</h2>
+                        <p class="news-card-date">2025-06-13</p>
+                    </div>
+                </a>
+
+                <!-- News Card 1: Co-Ideation -->
+                <a href="/news-detail.html?title=Poly%20Energy%20Joins%20HKUST%20x%20HKSTP%20Co-Ideation%20Program&date=2024-08-01&img=/assets/News/Co-ideation.png&summary=Poly%20Energy%20has%20officially%20joined%20the%20HKUST%20x%20HKSTP%20Co-Ideation%20Program.%20Thank%20you%20for%20the%20continued%20support!&link=https://ec.hkust.edu.hk/programs/hkust-hkstp-co-ideation-programme" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/Co-ideation.png" alt="Poly Energy Joins Co-Ideation Program" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Poly Energy Joins HKUST x HKSTP Co-Ideation Program</h2>
+                        <p class="news-card-date">2024-08-01</p>
+                    </div>
+                </a>
+
+                <!-- News Card 2: Innotech -->
+                <a href="/news-detail.html?title=Showcased%20at%20HKUST(GZ)%20Innotech%20%E5%88%9B%E7%A7%91%E5%98%89%E5%B9%B4%E5%8D%8E%202024&date=2024-06-16&img=/assets/News/innotech-1.jpg&img2=/assets/News/innotech-2.jpeg&summary=We%20showcased%20our%20project%20at%20the%20Innotech%20Carnival%20hosted%20by%20HKUST(GZ).%20Thank%20you%20to%20everyone%20who%20visited%20and%20supported%20us!&link=https://booth.31huiyi.com/mainsite/zh/b543e5b8-f800-42a5-b4d8-b7704e6f3b6a/51ce0000-fdb2-aa47-4383-08dc471f6526?type=exhibitor&EnterpriseType=[%226%22]" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/innotech-1.jpg" alt="HKUST(GZ) Innotech" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Showcased at HKUST(GZ) Innotech 创科嘉年华 2024</h2>
+                        <p class="news-card-date">2024-06-16</p>
+                    </div>
+                </a>
+
+                <!-- News Card 3: Silver Prize -->
+                <a href="/news-detail.html?title=Silver%20Prize%20in%2010th%20HK%20Student%20Innovation%20&%20Entrepreneurship%20Competition&date=2024-06-01&img=/assets/News/Silver-Prize-1.jpeg&img2=/assets/News/Silver-Prize-2.jpeg&summary=Our%20project%20was%20awarded%20the%20Second%20Prize%20in%20the%2010th%20Hong%20Kong%20Student%20Innovation%20and%20Entrepreneurship%20Competition!&link=https://www.hkchallengeplus.com/wp-content/uploads/2024/06/%E5%BE%97%E5%A5%AC%E5%90%8D%E5%96%AE_%E8%8B%B1.pdf" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/Silver-Prize-1.jpeg" alt="Hong Kong Student Innovation & Entrepreneurship Competition" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Silver Prize in 10th HK Student Innovation & Entrepreneurship Competition</h2>
+                        <p class="news-card-date">2024-06-01</p>
+                    </div>
+                </a>
+
+                <!-- News Card 4: Unicorn Day -->
+                <a href="/news-detail.html?title=Roadshow%20at%20HKUST%20Unicorn%20Day%202024&date=2024-05-31&img=/assets/News/unicron-day.jpeg&summary=We%20presented%20our%20project%20at%20the%20Unicorn%20Day%20event%20at%20HKUST.%20Thanks%20to%20all%20guests%20for%20your%20interest%20and%20support!&link=https://ec.hkust.edu.hk/sites/default/files/Unicorn%20Day%202024%20Technology%20Showcase.pdf" class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="/assets/News/unicron-day.jpeg" alt="HKUST Unicorn Day 2024" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h2 class="news-card-title">Roadshow at HKUST Unicorn Day 2024</h2>
+                        <p class="news-card-date">2024-05-31</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section company-info">
+                <h3>Poly Energy</h3>
+                <p>Address: Unit G1, 35/F, Legend Tower, 7 Shing Yip Street, Kwun Tong, Hong Kong</p>
+                <p>Email: <a href="mailto:hello@polyenergy.tech">hello@polyenergy.tech</a></p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-showcase.html">Our Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Poly Energy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">&uarr;</button>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html> 

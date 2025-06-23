@@ -1,0 +1,10 @@
+About Poly Energy
+Our Mission
+At Poly Energy, our mission is to revolutionize the future of energy storage by delivering safe, high-performance, and scalable all-solid-state battery solutions. We are committed to solving the critical limitations of current lithium-ion technologies, from safety risks to cycle life degradation, empowering cleaner, smarter, and more resilient energy systems.
+Our Vision
+We envision a world where energy storage is no longer the bottleneck for innovation. By advancing polymer-based solid-state electrolytes, we aim to become a global leader in next-generation battery materials, enabling transformative applications in electric vehicles, consumer electronics, aerospace, and beyond.
+Our Technology Strength
+Poly Energy is built on a decade of deep research expertise in polymer electrolytes and solid-state battery design. Our founding team includes leading scientists and engineers from HKUST with more than 10 years of experience in COF-based and polymer-based materials. We have developed a unique iCOF/PIL composite architecture that has already been granted multiple international patents.
+Our technology roadmap is designed not just for laboratory success, but for real-world manufacturability. With a scalable wet-chemistry process and strong validation through industry partnerships, we are advancing the commercialization of next-gen energy storage materials that prioritize both safety and performance.
+
+

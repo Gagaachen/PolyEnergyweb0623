@@ -1,0 +1,13 @@
+Overview
+
+Polymer Solid Electrolyte
+A proprietary iCOFs/PIL composite electrolyte featuring high ionic conductivity and wide electrochemical stability window.
+→ Non-flammable, process-compatible, and validated for high-voltage cathodes.
+
+Composite LFP Cathode
+Engineered to balance high safety, low cost, and compatibility with solid-state interfaces.
+→ Optimized for polymer-based SSB integration.
+
+Lithium Metal Anode
+Enables high energy density and low interfacial resistance.
+→ Demonstrates stable cycling with suppressed dendrite growth.

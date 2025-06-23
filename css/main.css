@@ -1,0 +1,384 @@
+/* Main content styles for Poly Energy website */
+main {
+    /* This will be the container for all sliding sections */
+}
+
+.slide {
+    min-height: 100vh; /* Make each slide take at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Optional: separator between slides */
+}
+
+/* Example styling for different sections - can be customized */
+#hero-section {
+    background-color: #e9ecef; /* Light grey, good for a hero */
+}
+
+/* Styles for Hero Section with Background Video */
+#hero-next-gen {
+    position: relative; /* Needed for absolute positioning of video and content */
+    overflow: hidden; /* Hide any video overflow */
+    background-color: #333; /* Fallback background color */
+}
+
+.hero-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-background-video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Slightly larger to avoid black bars */
+    height: 120%; /* Slightly larger to avoid black bars */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Disables interaction with the video */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Above the video */
+    text-align: center;
+    width: 100%; /* Make the container full-width within its parent slide */
+    /* Padding/alignment is already handled by .slide class, but can be adjusted here if needed */
+}
+
+/* Ensure text remains readable - you might need text shadows or overlays */
+.hero-content h1,
+.hero-content p {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Example text shadow for readability */
+    color: white; /* Ensure text is white against dark video - This should ideally be enough */
+    z-index: 1; /* Ensure text is above video if not already handled by .hero-content z-index */
+}
+
+/* Specific rule for .hero-content h1 with increased specificity */
+#hero-next-gen .hero-content h1 {
+    font-size: 4rem; /* Keep the increased font size */
+    background-color: rgba(0, 0, 0, 0.8); /* Reduced transparency */
+    padding: 0.4em 0; /* Lengthened the bar vertically, removed horizontal padding */
+    border-radius: 0; /* Removed border-radius for a bar look */
+    display: block; /* Make it a full-width block element */
+    color: white !important; /* Force color to white using !important */
+    margin: 0; /* Reset default margins */
+}
+
+.scroll-prompt {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    z-index: 1;
+    font-size: 1.1rem;
+}
+
+#all-solid-state-batteries {
+    background-color: #ffffff;
+}
+
+#polymer-electrolytes {
+    background-color: #f8f9fa;
+}
+
+#about-main {
+    background-color: #ffffff;
+}
+
+#news-main {
+    background-color: #f1f3f5;
+}
+
+.slide h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.slide h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.slide p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #666;
+}
+
+/* Styles for Key Technology Breakdown section in index.html */
+.key-technology-section h2 {
+    margin-bottom: 30px;
+}
+
+.key-technology-layout {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between video and overview */
+    align-items: flex-start; /* Align items to the top */
+    width: 90%;
+    margin: 0 auto 30px auto; /* Center and add bottom margin */
+    max-width: 1200px;
+}
+
+.video-area {
+    flex: 1; /* Takes up half the space */
+    min-width: 300px; /* Minimum width before wrapping */
+    aspect-ratio: 16 / 9;
+}
+
+.video-area iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 0;
+}
+
+.overview-area {
+    flex: 1; /* Takes up half the space */
+    min-width: 300px; /* Minimum width before wrapping */
+    text-align: left;
+}
+
+.overview-area h3, .video-area h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.overview-area h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.overview-area p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* New styles for overview-item layout */
+.overview-item {
+    display: flex;
+    align-items: flex-start; /* Align image to top of text block */
+    gap: 15px; /* Space between image and text */
+    margin-bottom: 25px; /* Space between overview items */
+}
+
+.material-inline-image {
+    width: 80px; /* Small image size */
+    height: 80px;
+    object-fit: cover; /* Or contain, depending on image aspect ratio and desired look */
+    border-radius: 50%; /* Ensure it is a circle */
+    border: none; /* Explicitly remove any border */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.overview-text h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0; /* Reset margin as it's inside flex item */
+    margin-bottom: 8px;
+}
+
+.overview-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0; /* Reset margin as it's the last element in its group */
+}
+
+/* Responsive adjustments for key technology section */
+@media (max-width: 768px) {
+    .key-technology-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-area,
+    .overview-area {
+        flex: 1 1 100%; /* Allow items to take full width when stacked */
+        max-width: 600px; /* Limit width when stacked for better readability */
+    }
+    .overview-item {
+        /* May not need specific changes if flex properties handle it well */
+    }
+}
+
+@media (max-width: 480px) {
+    .material-item {
+        flex-basis: 100%; /* One item per row on small screens */
+    }
+}
+
+/* Styles for Advantages Section in index.html */
+.advantages-section h3 {
+    text-align: center; /* Center the "Four Core Advantages" title */
+    margin-bottom: 30px;
+    font-size: 1.8rem; /* Slightly larger title for this section */
+}
+
+.advantages-grid {
+    display: flex; 
+    justify-content: center; /* Changed from space-between to center */
+    align-items: flex-start; /* Align items to the top if they have different heights */
+    flex-wrap: nowrap; /* Explicitly ensure no wrapping */
+    gap: 30px; /* Restored gap to 30px, can be adjusted */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-item {
+    text-align: center;
+    padding: 30px; /* Increased padding from 20px to make frame larger */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    flex: 1; /* Allow items to grow and shrink equally, helps in distributing space */
+    min-width: 200px; /* Optional: ensure a minimum width for each item */
+    /* Consider adding a min-height if consistent frame height is desired regardless of content */
+    /* min-height: 220px; */ 
+}
+
+.advantage-item img {
+    max-width: 100px; /* Control image size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.advantage-item p {
+    font-size: 1.2rem; /* Reduced font size from 2.5rem */
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Reset default paragraph margin */
+}
+
+/* Styles for Application Areas section */
+#application-areas .applications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#application-areas .app-item {
+    border: 3px solid #ccc; /* Increased border width */
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px; /* Increased width of the item box */
+    text-align: center;
+    background-color: #fff; /* Added a white background for consistency */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Reduced shadow transparency */
+    transition: transform 0.3s ease-in-out; /* Added for smooth zoom effect */
+}
+
+#application-areas .app-item:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+#application-areas .app-item img {
+    width: 100%;
+    height: 160px; /* Shortened frame by reducing image height */
+    object-fit: cover; /* Changed to 'cover' to fill the frame */
+    margin-bottom: 15px;
+}
+
+#application-areas .app-item h4 {
+    font-size: 1.25rem; /* Made font bigger */
+}
+
+/* Styles for Advantages & Partnerships section */
+#advantages-partnership .advantages-section {
+    margin-bottom: 40px;
+}
+
+/* Common style for section titles within advantages-partnership */
+#advantages-partnership .advantages-section h3,
+#advantages-partnership .partnership-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem; /* Consistent title size */
+}
+
+#advantages-partnership .partnership-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#advantages-partnership .partnership-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 50px 0;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    margin-top: 10px;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 1000px;
+    width: max-content;
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+#advantages-partnership .partnership-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+#advantages-partnership .partner-logo-item {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+#advantages-partnership .partner-logo-item img {
+    height: 120px; /* Increased logo height */
+    max-width: 220px; /* Increased max-width accordingly */
+    object-fit: contain;
+}
+
+/* Style for header logo image */
+header .logo img {
+    height: 180px; /* Increased size by 1.5x from 120px */
+} 

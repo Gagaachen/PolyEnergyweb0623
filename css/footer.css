@@ -1,0 +1,63 @@
+/* Footer styles for Poly Energy website */
+footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #f8f9fa; /* Light text color */
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px; /* Space between footer sections */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 180px; /* Minimum width for each section before wrapping */
+    margin-bottom: 10px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #adb5bd; /* Lighter link color for footer */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffffff; /* White on hover */
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #495057; /* Separator line */
+    font-size: 0.85rem;
+    color: #adb5bd;
+} 

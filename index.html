@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poly Energy - Next-Gen Energy Solutions</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        /* Scroll to Top Button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #14ae55; /* Using a theme green color */
+            color: white;
+            cursor: pointer;
+            padding: 10px 25px; /* Adjusted padding: 10px top/bottom, 25px left/right */
+            border-radius: 25px; /* Make it a capsule shape */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #108a44; /* Darker green on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/poly-energy-logo.png" alt="Poly Energy Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-showcase.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-button">&#9776;</div>
+        </nav>
+    </header>
+
+    <main id="product-showcase">
+        <section id="hero-next-gen" class="slide">
+            <div class="hero-background-video">
+                <iframe 
+                    src="https://www.youtube.com/embed/Nk2FT2zLy_4?autoplay=1&mute=1&loop=1&playlist=Nk2FT2zLy_4&controls=0&showinfo=0&modestbranding=1&rel=0&vq=hd1080" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="hero-content">
+                <h1>Next-Gen</h1>
+            </div>
+            <p class="scroll-prompt">Scroll to discover more</p>
+        </section>
+
+        <!-- Updated Section: Key Technology Breakdown -->
+        <section id="product-parameters" class="slide key-technology-section">
+            <h2>Key Technology Breakdown</h2>
+            <div class="key-technology-layout">
+                <div class="video-area">
+                    <div id="player" class="plyr__video-embed">
+                        <iframe
+                            src="https://www.youtube.com/embed/LiLoygpi2vs?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen
+                            allowtransparency
+                            allow="autoplay"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="overview-area">
+                    <h3>Overview & Materials</h3>
+                    
+                    <div class="overview-item">
+                        <img src="assets/Core Product Parameters & Material System/Polymer.png" alt="Polymer Solid Electrolyte" class="material-inline-image">
+                        <div class="overview-text">
+                            <h4>Polymer Solid Electrolyte</h4>
+                            <p>A proprietary iCOFs/PIL composite electrolyte featuring high ionic conductivity and wide electrochemical stability window.<br>
+                            &rarr; Non-flammable, process-compatible, and validated for high-voltage cathodes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-item">
+                        <img src="assets/Core Product Parameters & Material System/cathode.png" alt="Composite LFP Cathode" class="material-inline-image">
+                        <div class="overview-text">
+                            <h4>Composite LFP Cathode</h4>
+                            <p>Engineered to balance high safety, low cost, and compatibility with solid-state interfaces.<br>
+                            &rarr; Optimized for polymer-based SSB integration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-item">
+                        <img src="assets/Core Product Parameters & Material System/Anode.png" alt="Lithium Metal Anode" class="material-inline-image">
+                        <div class="overview-text">
+                            <h4>Lithium Metal Anode</h4>
+                            <p>Enables high energy density and low interfacial resistance.<br>
+                            &rarr; Demonstrates stable cycling with suppressed dendrite growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="application-areas" class="slide">
+            <h2>Product Application Areas</h2>
+            <div class="applications-container">
+                <div class="app-item">
+                    <img src="assets/Product application areas/Consumer Electronics.png" alt="Consumer Electronics Application">
+                    <h4>Consumer Electronics</h4>
+                </div>
+                <div class="app-item">
+                    <img src="assets/Product application areas/Automotive Batteries.png" alt="Automotive Batteries Application">
+                    <h4>Automotive Batteries</h4>
+                </div>
+                <div class="app-item">
+                    <img src="assets/Product application areas/Drones.png" alt="Drones Application">
+                    <h4>Low-altitude Flights</h4>
+                </div>
+                <!-- Add more application items as needed -->
+            </div>
+        </section>
+
+        <section id="advantages-partnership" class="slide">
+            <h2>Our Advantages & Partnerships</h2>
+            <div class="advantages-section">
+                <h3>Four Core Advantages</h3>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <img src="assets/Advantages/High Energy Density.png" alt="High Energy Density">
+                        <p>High Energy Density</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="assets/Advantages/Superior Safety.png" alt="Superior Safety">
+                        <p>Superior Safety</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="assets/Advantages/Long Cycle Life.png" alt="Long Cycle Life">
+                        <p>Long Cycle Life</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="assets/Advantages/Balanced Cost.png" alt="Balanced Cost">
+                        <p>Balanced Cost</p>
+                    </div>
+                </div>
+            </div>
+            <div class="partnership-section">
+                <h3>Partnerships</h3>
+                <div class="partnership-slider-wrapper">
+                    <button id="scroll-left-btn" class="slider-btn">&lt;</button>
+                    <div class="partnership-scroll-container">
+                        <div class="partner-logo-item">
+                            <img src="assets/Partnership/HKSTP Logo.png" alt="HKSTP Logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="assets/Partnership/GP Batteries Logo.jpg" alt="GP Batteries Logo">
+                        </div>
+                        <!-- Add more partner logos here -->
+                    </div>
+                    <button id="scroll-right-btn" class="slider-btn">&gt;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section company-info">
+                <h3>Poly Energy</h3>
+                <p>Address: Unit G1, 35/F, Legend Tower, 7 Shing Yip Street, Kwun Tong, Hong Kong</p>
+                <p>Email: <a href="mailto:hello@polyenergy.tech">hello@polyenergy.tech</a></p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-showcase.html">Our Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Poly Energy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">&uarr;</button>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html> 

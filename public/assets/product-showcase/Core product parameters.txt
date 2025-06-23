@@ -1,0 +1,12 @@
+Polymer Electrolytes
+
+Ionic Conductivity: 1–9 × 10⁻³ S/cm
+Li⁺ Transference Number: >0.8
+Cycle Life: 1,000+
+Capacity Retention: 87% after 800 cycles
+
+Pouch Cell
+
+Energy Density: ~900 Wh/L
+Cycle Life: 1,000+
+Capacity Retention: 87% after 1,000 cycles (1C, 22–23°C)

@@ -1,0 +1,89 @@
+/* Header styles for Poly Energy website */
+header {
+    background-color: #d5f7dd; /* Changed to #d5f7dd */
+    padding: 1rem 0;
+    border-bottom: 1px solid #e7e7e7;
+    position: fixed; /* Fix header to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+}
+
+.logo {
+    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo img {
+    height: 70px; /* Controls the height of the logo */
+    width: auto;  /* Maintains aspect ratio */
+    vertical-align: middle; /* Improves vertical alignment */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 24px;
+}
+
+.nav-links a {
+    color: #222;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.nav-links a:hover {
+    color: #007bff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.mobile-menu-button {
+    display: none; /* Hidden by default, shown on mobile */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Basic responsive for header (example) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links */
+        /* Future: Show them vertically when menu button is clicked */
+    }
+    .mobile-menu-button {
+        display: block; /* Show hamburger icon */
+    }
+} 
